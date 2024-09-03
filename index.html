@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Law-Portfolio</div> 
+
+    <div class="menu-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+          <!-- Language selection dropdown for desktop view -->
+    <div class="language-selector">
+      <select id="language-select" onchange="switchLanguage()">
+        <option value="en">🇬🇧 </option>
+        <option value="fr">🇫🇷 </option>
+      </select>
+    </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation (Hamburger Menu) -->
+  <nav id="hamburger-nav">
+    <div class="logo">Law-Portfolio</div>
+    <div class="hamburger-menu menu-right">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Mobile menu links -->
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+        <!-- Language selection dropdown for desktop view -->
+        <div class="language-selector">
+          <select id="language-select" onchange="switchLanguage()">
+            <option value="en">🇬🇧 </option>
+            <option value="fr">🇫🇷 </option>
+          </select>
+        </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.jpeg" alt="Lawal profile picture" class="profile-pic" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1" data-lang="en">Hello, I am</p>
+      <p class="section__text__p1" data-lang="fr" style="display: none;">Bonjour, je suis</p>
+      <h1 class="title" data-lang="en">Mouhamed Lawal DAN AZOUMI</h1>
+      <h1 class="title" data-lang="fr" style="display: none;">Mouhamed Lawal DAN AZOUMI</h1>
+      <p class="section__text__p2" data-lang="en">Mobile Developer</p>
+      <p class="section__text__p2" data-lang="fr" style="display: none;">Développeur Mobile</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-lawal-en.pdf')">
+          <span data-lang="en">Download CV 🇬🇧</span>
+          <span data-lang="fr" style="display: none;">Télécharger le CV 🇬🇧</span>
+        </button>
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-lawal-fr.pdf')">
+          <span data-lang="en">Download CV 🇫🇷</span>
+          <span data-lang="fr" style="display: none;">Télécharger le CV 🇫🇷</span>
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <span data-lang="en">Contact Info</span>
+          <span data-lang="fr" style="display: none;">Contactez-moi</span>
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/mouhamed-lawal-dan-azoumi-597975206/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/law-san-667'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1" data-lang="en">Get To Know More</p>
+    <p class="section__text__p1" data-lang="fr" style="display: none;">En savoir plus</p>
+    <h1 class="title" data-lang="en">About Me</h1>
+    <h1 class="title" data-lang="fr" style="display: none;">À propos de moi</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <p data-lang="en">Mouhamed Lawal DAN AZOUMI is a <strong>Flutter mobile developer</strong> with solid experience in <strong>iOS & Android</strong> deployment & backend technologies such as <strong>Node JS, Express JS, Spring Boot</strong>, and some DevOps with <strong>Docker</strong>. He currently works as Lead Tech Dev for <a href="https://www.pulsargroup.org/">Pulsar Technologies</a> since May 2023. Lawal always likes to use his competencies to enhance his customers' activities with his apps or contribute to the dev community.</p>
+        <p data-lang="fr" style="display: none;">Mouhamed Lawal DAN AZOUMI est un <strong>développeur mobile Flutter</strong> avec une solide expérience en déploiement sur <strong>iOS & Android</strong> et certaines technologies backend comme <strong>Node JS, Express JS, Spring Boot</strong>, ainsi que dans le domaine du DevOps avec <strong>Docker</strong>. Il travaille actuellement en tant que Lead Tech Dev pour <a href="https://www.pulsargroup.org/">Pulsar Technologies</a> depuis mai 2023. Lawal aime toujours utiliser ses compétences pour améliorer les activités de ses clients avec ses applications ou contribuer à la communauté des développeurs.</p>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1" data-lang="en">Explore My</p>
+    <p class="section__text__p1" data-lang="fr" style="display: none;">Découvrez mon</p>
+    <h1 class="title" data-lang="en">Experience</h1>
+    <h1 class="title" data-lang="fr" style="display: none;">Expérience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title" data-lang="en">Frontend Development</h2>
+          <h2 class="experience-sub-title" data-lang="fr" style="display: none;">Développement Frontend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Flutter</h3>
+                <p data-lang="en">Experienced</p>
+                <p data-lang="fr" style="display: none;">Expérimenté</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p data-lang="en">Experienced</p>
+                <p data-lang="fr" style="display: none;">Expérimenté</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Docker</h3>
+                <p data-lang="en">Intermediate</p>
+                <p data-lang="fr" style="display: none;">Intermédiaire</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p data-lang="en">Experienced</p>
+                <p data-lang="fr" style="display: none;">Expérimenté</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p data-lang="en">Intermediate</p>
+                <p data-lang="fr" style="display: none;">Intermédiaire</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Spring Boot</h3>
+                <p data-lang="en">Intermediate</p>
+                <p data-lang="fr" style="display: none;">Intermédiaire</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1" data-lang="en">Browse My Recent</p>
+    <p class="section__text__p1" data-lang="fr" style="display: none;">Explorez mes récents</p>
+    <h1 class="title" data-lang="en">Projects</h1>
+    <h1 class="title" data-lang="fr" style="display: none;">Projets</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Samaxew</h2>
+          <p data-lang="en">Samaxew is a platform offering both, if you are a customer the possibility of efficiently finding a person who can solve a specific problem for you and, if you are a service provider, a managing tool for your business and a highlighting platform for your activities to explode your turnover! <br> 
+          <i class="app-availability-info" >The app is currently available only on iOS.</i>
+          </p>
+          <p data-lang="fr" style="display: none;">Samaxew est une plateforme offrant à la fois, si vous êtes client la possibilité de trouver efficacement une personne qui peut résoudre un problème spécifique pour vous et, si vous êtes prestataire de services, un outil de gestion pour votre entreprise et une plateforme de mise en avant de vos activités pour faire exploser votre chiffre d'affaires! <br> <i class="app-availability-info" >L'application n'est actuellement disponible que sur iOS.</i> </p>
+          <br>
+          <div class="btn-container">
+            <button data-lang="en" class="btn btn-color-2 project-btn" onclick="location.href='https://onelink.to/xj66az'">
+              See App
+            </button>
+            <button data-lang="fr" style="display: none;" class="btn btn-color-2 project-btn" onclick="location.href='https://onelink.to/xj66az'">
+              Voir l'application
+            </button>
+            <!-- <button  data-lang="en" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+            <!-- <button data-lang="fr" style="display: none;" class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Zeina Business</h2>
+          <p data-lang="en">Zeina Business is an application allowing you, if you are a seller or service provider, to have a complete and precise monitoring tool for your activities, customers, products, and accounting. Save valuable time and use the data provided by Zeina to take your business to the next level!</p>
+          <p data-lang="fr" style="display: none;">Zeina Business est une application vous permettant, si vous êtes vendeur ou prestataire de services, d'avoir un outil de suivi complet et précis pour vos activités, clients, produits et comptabilité. Économisez un temps précieux et utilisez les données fournies par Zeina pour faire passer votre entreprise au niveau supérieur !</p>
+          <br>
+          <div class="btn-container">
+            <button data-lang="en" class="btn btn-color-2 project-btn" onclick="location.href='https://onelink.to/ncu43s'">
+              See App
+            </button>
+            <button data-lang="fr" style="display: none;" class="btn btn-color-2 project-btn" onclick="location.href='https://onelink.to/ncu43s'">
+              Voir l'application
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Zeina Client</h2>
+          <p data-lang="en">Zeina Client is the Zeina solution application dedicated to customers who will have the opportunity to find efficiently businesses & products they are looking for, maintain loyalty with their favorite businesses, and also follow their activities with them with tracking of orders and transactions.</p>
+          <p data-lang="fr" style="display: none;">Zeina Client est l'application de la solution Zeina dédiée aux clients qui auront la possibilité de trouver efficacement les entreprises et les produits qu'ils recherchent, de maintenir une fidélisation avec leurs entreprises préférées et également de suivre leurs activités avec elles, avec le suivi des commandes et des transactions.</p>
+          <br>
+          <div class="btn-container">
+            <button data-lang="en" class="btn btn-color-2 project-btn" onclick="location.href='https://onelink.to/gng8h3'">
+              See App
+            </button>
+            <button data-lang="fr" style="display: none;" class="btn btn-color-2 project-btn" onclick="location.href='https://onelink.to/gng8h'">
+              Voir l'application
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1" data-lang="en">Get in Touch</p>
+    <p class="section__text__p1" data-lang="fr" style="display: none;">Contactez-moi</p>
+    <h1 class="title" data-lang="en">Contact Me</h1>
+    <h1 class="title" data-lang="fr" style="display: none;">Me Contacter</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:lawdanazoumi@gmail.com">lawdanazoumi@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/mouhamed-lawal-dan-azoumi-597975206/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Mouhamed Lawal DAN AZOUMI. All Rights Reserved.</p>
+  </footer>
+  <!-- Language Switch JavaScript -->
+<!-- Language Switch JavaScript -->
+<script>
+  function switchLanguage() {
+    const selectedLang = document.getElementById('language-select').value || document.getElementById('language-select-mobile').value;
+    const allElements = document.querySelectorAll('[data-lang]');
+
+    // Loop through all elements with data-lang attribute
+    allElements.forEach(el => {
+      // Display elements of selected language, hide others
+      if (el.getAttribute('data-lang') === selectedLang) {
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+  }
+
+  function toggleMenu() {
+    const menu = document.querySelector('.menu-links');
+    menu.classList.toggle('open');
+  }
+</script>  <script src="script.js" ></script>
+</body>
+
+</html>
