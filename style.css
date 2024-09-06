@@ -247,6 +247,7 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -293,6 +294,47 @@ section {
 .btn-container {
   gap: 1rem;
 }
+
+svg{
+  height: 1.5rem;
+}
+
+
+.store-download-btn{
+/*<a class="flex w-fit items-center gap-1 rounded-lg border border-white bg-black p-2 hover:shadow-md" href="https://onelink.to/xj66az"><img alt="apple-logo" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" srcset="/_next/image?url=%2Ffooter%2Fapple.svg&amp;w=32&amp;q=75 1x, /_next/image?url=%2Ffooter%2Fapple.svg&amp;w=48&amp;q=75 2x" src="/_next/image?url=%2Ffooter%2Fapple.svg&amp;w=48&amp;q=75" style="color: transparent;"><p class="text-xs font-semibold text-white">App Store</p></a>*/
+  /* a tag has the class .store-download-btn */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid white;
+  background: black;
+  padding: 0.5rem;
+  transition: all 300ms ease;
+  text-decoration: none;
+  box-decoration-break: none;
+
+}
+
+.store-download-btn:hover {
+  cursor: pointer;
+  background: rgb(53, 53, 53);
+  text-decoration: none;
+  box-decoration-break: none;
+}
+
+.store-download-btn img {
+  width: 1.5rem;
+}
+
+.store-download-btn p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+
+
 
 /* ABOUT SECTION */
 
