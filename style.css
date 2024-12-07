@@ -462,6 +462,10 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
+#samaxew-link{
+  color: green;
+}
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
