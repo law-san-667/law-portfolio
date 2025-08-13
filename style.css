@@ -465,6 +465,18 @@ article .icon {
 #samaxew-link{
   color: green;
 }
+#beta-link{
+  color: blue;
+}
+
+#wolf-link{
+  color: burlywood;
+}
+
+#zeina-link{
+  /* ARGB(255, 223, 101, 132) */
+  color: rgb(223, 101, 132);
+}
 
 .project-img {
   border-radius: 2rem;
